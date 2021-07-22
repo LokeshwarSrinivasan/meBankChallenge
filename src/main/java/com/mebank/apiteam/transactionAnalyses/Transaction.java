@@ -31,11 +31,11 @@ public class Transaction {
 		this.relatedTransaction = relatedTransaction;
 	}
 
-	public String getTransactionId() {
+	public String gettransactionID() {
 		return transactionId;
 	}
 
-	public void setTransactionId(String transactionId) {
+	public void settransactionID(String transactionId) {
 		this.transactionId = transactionId;
 	}
 

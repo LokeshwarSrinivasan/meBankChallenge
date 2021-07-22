@@ -20,7 +20,8 @@ import ch.qos.logback.classic.Logger;
 
 public class TransactionApp {
 
-	private static final Logger logger = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(TransactionApp.class);
+	private static final Logger logger = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(TransactionApp
+.class);
 	private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 	private final Map<String, List<Transaction>> accountTransactionMap = new HashMap<>();
 
@@ -31,13 +32,20 @@ public class TransactionApp {
 			logger.error("Usage: java -jar <jar_name> <csv_path> <accountId> <\"fromDate\"> <\"toDate\">");
 			System.exit(1);
 		}
-		TransactionApp transactionApp = new TransactionApp();
+		TransactionApp
+	 TransactionApp
+	 = new TransactionApp
+	();
 		try {
 			Reader reader = Files.newBufferedReader(Paths.get(args[0]));
-			transactionApp.init(reader);
-			Input searchCriteriaInput = transactionApp.getSearchInput(args);
-			List<Transaction> filteredTransactions = transactionApp.getFilteredTransactions(searchCriteriaInput);
-			BigDecimal amount = transactionApp.aggregateTransaction(searchCriteriaInput.getAccountId(),
+			TransactionApp
+		.init(reader);
+			Input searchCriteriaInput = TransactionApp
+		.getSearchInput(args);
+			List<Transaction> filteredTransactions = TransactionApp
+		.getFilteredTransactions(searchCriteriaInput);
+			BigDecimal amount = TransactionApp
+		.aggregateTransaction(searchCriteriaInput.getAccountId(),
 					filteredTransactions);
 			logger.info("Amount = " + amount);
 		} catch (Exception e) {
