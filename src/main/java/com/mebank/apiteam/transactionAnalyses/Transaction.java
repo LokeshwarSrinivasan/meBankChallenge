@@ -31,7 +31,7 @@ public class Transaction {
 		this.relatedTransaction = relatedTransaction;
 	}
 
-	public String gettransactionID() {
+	public String getTransactionID() {
 		return transactionId;
 	}
 
