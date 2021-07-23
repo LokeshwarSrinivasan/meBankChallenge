@@ -7,7 +7,7 @@
    This will create a folder mebank in your current working directory.
 * Execute command:
 
-``` cd mebank ```
+``` cd meBankChallenge ```
 * Compile code using following command
 
 ``` mvn clean install ```
