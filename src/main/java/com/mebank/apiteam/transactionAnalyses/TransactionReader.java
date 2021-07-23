@@ -25,7 +25,8 @@ public class TransactionReader {
 
 			String[] tokens;
 			while ((tokens = csvReader.readNext()) != null) {
-				
+				// transactionId, fromAccountId, toAccountId, createdAt, amount,
+				// transactionType, relatedTransaction
 				String transactionId = tokens[0].trim();
 				String fromAccountId = tokens[1].trim();
 				String toAccountId = tokens[2].trim();
